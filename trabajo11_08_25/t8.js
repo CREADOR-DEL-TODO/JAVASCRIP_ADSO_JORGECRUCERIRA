@@ -1,3 +1,4 @@
+const prompt = require('prompt-sync')();
 const numPrimo = parseInt(prompt("pone un numero primo"));
 
 

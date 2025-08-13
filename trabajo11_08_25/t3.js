@@ -1,3 +1,4 @@
+const prompt = require('prompt-sync')();
 const edad = parseInt(prompt("cual es tu edad: "));
 
 const tieneCedula = prompt("¿Tiene cédula de ciudadania? sisas o nonas: ").toLowerCase() === 'si';

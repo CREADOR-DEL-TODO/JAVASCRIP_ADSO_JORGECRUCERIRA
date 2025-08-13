@@ -1,3 +1,5 @@
+const prompt = require('prompt-sync')();
+
 const numeropi = parseFloat(prompt("Ingrese un número: "));
 
 if (isNaN(numeropi)) {

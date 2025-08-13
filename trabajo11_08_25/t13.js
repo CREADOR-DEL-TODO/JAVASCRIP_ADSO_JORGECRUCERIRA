@@ -1,3 +1,4 @@
+const prompt = require('prompt-sync')();
 const decimal = parseInt(prompt("un numero decimal pelao, pongalo"));
 
 if (isNaN(decimal)) {

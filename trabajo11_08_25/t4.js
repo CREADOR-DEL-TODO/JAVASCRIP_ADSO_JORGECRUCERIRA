@@ -1,3 +1,4 @@
+const prompt = require('prompt-sync')();
 const diaNum = parseInt(prompt("un numero entre 1 y 7: "));
 
 let diaSemana = "";

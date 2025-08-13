@@ -1,3 +1,4 @@
+const prompt = require('prompt-sync')();
 const numFact = parseInt(prompt("pon un numero entero positivo"));
 
 if (numFact < 0) {

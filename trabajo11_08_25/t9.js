@@ -1,3 +1,4 @@
+const prompt = require('prompt-sync')();
 console.log("Opción 9: Tablas de multiplicar del 5, 6, 7, 8 y 9");
 
 for (let tabla = 5; tabla <= 9; tabla++) {

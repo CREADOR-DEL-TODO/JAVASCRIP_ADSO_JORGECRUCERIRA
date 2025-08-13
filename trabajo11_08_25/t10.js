@@ -1,3 +1,4 @@
+const prompt = require('prompt-sync')();
 const veces = parseInt(prompt("un numero entre 1 y 20"));
 
 const frase = prompt("pone la frase que queras  ");

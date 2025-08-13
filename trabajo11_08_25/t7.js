@@ -1,3 +1,4 @@
+const prompt = require('prompt-sync')();
 const inicio = parseInt(prompt("cual es el primer numero"));
 
 const fin = parseInt(prompt("ahora el segundo numero"));

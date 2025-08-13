@@ -1,3 +1,4 @@
+const prompt = require('prompt-sync')();
 const numero = parseInt(prompt("pon un número entero: "), 10);
 
 if (isNaN(numero)) {
