@@ -1,26 +1,43 @@
-import Alcancia from ".alcancia.js"
+const reiniciarAlcancia = () => {
+    crearAlcancia();
+    actualizarDatosInterfaz();
+};
 
-let miAlcancia = null
+document.querySelector("#btnRomper").addEventListener("click", () => {
+    reiniciarAlcancia();
+});
 
-const crearAlcancia = () =>{
-    miAlcancia = new Alcancia()
-}
+import Alcancia from "./alcancia.js";
 
-const actualizarDatosInterfaz = () =>{
-    document.querySelector("#txtMonedas200").value=miAlcancia.moneda200
-    document.querySelector("#txtMonedas500").value=miAlcancia.moneda500
-    document.querySelector("#txtMonedas1000").value=miAlcancia.moneda1000
-    document.querySelector("#txtTotalAlcancia").value=miAlcancia.calcularTotalAhorrado()
-}
+let miAlcancia = null;
 
-document.querySelector("#img200").addEventListener("click",()=>{
-    miAlcancia.agregarMoneda200()
-    actualizarDatosInterfaz()
-})
+const crearAlcancia = () => {
+    miAlcancia = new Alcancia();
+};
 
-const inicializarAlcancia=()=>{
-    crearAlcancia()
-    actualizarDatosInterfaz()
-}
+const actualizarDatosInterfaz = () => {
+    document.querySelector("#txtMonedas200").value = miAlcancia.moneda200;
+    document.querySelector("#txtMonedas500").value = miAlcancia.moneda500;
+    document.querySelector("#txtMonedas1000").value = miAlcancia.moneda1000;
+    document.querySelector("#txtTotalAlcancia").value = miAlcancia.calculartotalahorrado();
+};
 
-inicializarAlcancia
+document.querySelector("#img200").addEventListener("click", () => {
+    miAlcancia.agregarmoneda200();
+    actualizarDatosInterfaz();
+});
+document.querySelector("#img500").addEventListener("click", () => {
+    miAlcancia.agregarmoneda500();
+    actualizarDatosInterfaz();
+});
+document.querySelector("#img1000").addEventListener("click", () => {
+    miAlcancia.agregarmoneda1000();
+    actualizarDatosInterfaz();
+});
+
+const inicializarAlcancia = () => {
+    crearAlcancia();
+    actualizarDatosInterfaz();
+};
+
+inicializarAlcancia();
